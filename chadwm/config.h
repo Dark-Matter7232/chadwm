@@ -66,12 +66,14 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
+    /* Dont remove this! */
+    "sh", "-c", "dwm-bar &", NULL,  
 	"sh", "-c", "feh --bg-fill ~/Pictures/wall/comfy.jpg &", NULL,
-	"sh", "-c", "xrdb merge ~/Public/xresources/nord/.Xresources &", NULL,
+	"sh", "-c", "xrdb merge ~/.local/share/dwm-crap/dwm_nord/.Xresources &", NULL,
 	"sh", "-c", "picom &", NULL,
-	"sh", "-c", "cp -r ~/Public/theme\ and\ icons/flux/.gtkrc-2.0 ~/ &", NULL,
-	"sh", "-c", "cp -r ~/Public/theme\ and\ icons/flux/settings.ini  ~/.config/gtk-3.0/ &", NULL,
-	"sh", "-c", "cp -r ~/Public/rofi/dwm_nord/rofi/ ~/.config/ &", NULL,
+	"sh", "-c", "cp -r ~/.local/share/dwm-crap/.gtkrc-2.0 ~/ &", NULL,
+	"sh", "-c", "cp -r ~/.local/share/dwm-crap/settings.ini  ~/.config/gtk-3.0/ &", NULL,
+	"sh", "-c", "cp -r ~/.local/share/dwm-crap/dwm_nord/rofi/ ~/.config/ &", NULL,
 	"sh", "-c", "xbacklight -set 10 &", NULL,
 	"sh", "-c", "xmodmap ~/.xmodmap-sid &", NULL,
     /* Dont remove these! */
