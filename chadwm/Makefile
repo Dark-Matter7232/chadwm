@@ -40,6 +40,10 @@ install: all
 	mkdir -p ${DESTDIR}${MANPREFIX}/man1
 	sed "s/VERSION/${VERSION}/g" < dwm.1 > ${DESTDIR}${MANPREFIX}/man1/dwm.1
 	chmod 644 ${DESTDIR}${MANPREFIX}/man1/dwm.1
+	cp dwm-bar layoutmenu /bin
+	cp dwm-bar /bin
+	chmod 755 /bin/dwm-bar
+	chmod 755 /bin/layoutmenu
 
 uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/dwm\

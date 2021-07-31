@@ -74,10 +74,6 @@ static const char *const autostart[] = {
 	"sh", "-c", "cp -r ~/.local/share/dwm-crap/.gtkrc-2.0 ~/ &", NULL,
 	"sh", "-c", "cp -r ~/.local/share/dwm-crap/settings.ini  ~/.config/gtk-3.0/ &", NULL,
 	"sh", "-c", "cp -r ~/.local/share/dwm-crap/dwm_nord/rofi/ ~/.config/ &", NULL,
-	"sh", "-c", "xbacklight -set 10 &", NULL,
-	"sh", "-c", "xmodmap ~/.xmodmap-sid &", NULL,
-    /* Dont remove these! */
-	"sh", "-c", "~/.dwm/bar &", NULL,
 	NULL /* terminate */
 };
 
@@ -145,7 +141,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", NULL };
 static const char *termcmd[]  = {  "st", NULL }; // change this to your term
 static const char *rofi[] = {"rofi", "-show", "drun", NULL };
-static const char *layoutmenu_cmd = "layoutmenu.sh";
+static const char *layoutmenu_cmd = "layoutmenu";
 static const char *xi[] = {"xbacklight", "-inc", "7", NULL};
 static const char *xd[] = {"xbacklight", "-dec", "7", NULL};
 
