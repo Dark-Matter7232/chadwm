@@ -32,6 +32,7 @@ static const char *fonts[]          = { "JetBrainsMono Nerd Font:style:medium:si
 static const char dmenufont[]       = "monospace:size=10";
 static const int colorfultag        = 1;  /* 0 means use SchemeSel for selected non vacant tag */
 
+#include "selfrestart.c"
 
 static const char black[]       = "#2E3440";
 static const char gray2[]       = "#3B4252"; // unfocused window border
@@ -234,7 +235,7 @@ static Key keys[] = {
     {
         MODKEY|ControlMask,           XK_q,      quit,           {0}
     },
-    { MODKEY|ShiftMask,             XK_r,      quit,           {1} },
+    { MODKEY|ShiftMask,             XK_r,      self_restart,   {0} },
 
 };
 
