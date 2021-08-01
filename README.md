@@ -11,10 +11,11 @@
 
 - xsetroot package ( status2d uses this to add colors on dwmbar)
 - xmenu (for layoutmenu)
-- JetbrainsMono Nerd Font and Material design icon font
+- JetbrainsMono Nerd Font (or any nerd font) and Material design icon font
 
 # Setup 
 
+- copy the stuff from fonts folder to your ~/.local/share/fonts ( this is for material design icon font )
 - cd into chadwm and sudo make install
 - config.h file must be adjusted for your liking!
 
